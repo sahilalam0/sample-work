@@ -1,6 +1,6 @@
 # Sample Work
 
-## How to Apprach this work
+## Get Started
 - Fork this repo.
 - Start with desktop.png and build a website to match it(Pure HTML/CSS)
 - Use the concepts you have learned to implement develop the site
