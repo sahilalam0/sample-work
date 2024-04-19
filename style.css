@@ -1,4 +1,5 @@
 * {
+  font-family: "Noto Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,8 +8,12 @@
   --nav-height: 100px;
   --sky-blue-background: rgb(78 172 221);
   --sky-blue-background-dark: rgb(31 169 225);
-  --sayhello-background: #f4f4f4;
-  font-family: "Noto Sans", sans-serif;
+  --grey-background: #f4f4f4;
+  --dark-grey: #5c5c5c;
+  --grey: #909090;
+  --light-grey: #b0b0b0;
+  --green: #16af90;
+  --red: #ea4c89;
 }
 
 .container {
@@ -111,10 +116,10 @@
   width: 175px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: fit-content;
-  padding: 15px 20px 15px;
+  padding: 15px 24px 15px;
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -123,14 +128,27 @@
 }
 
 .btn--green {
-  border: 2px solid #16af90;
+  border: 2px solid var(--green);
   background-color: transparent;
-  color: #16af90;
+  color: var(--green);
 }
 .btn--red {
-  border: 2px solid #ea4c89;
+  border: 2px solid var(--red);
   background-color: transparent;
-  color: #ea4c89;
+  color: var(--red);
+}
+
+.btn__beer {
+  width: 200px;
+  padding: 15px 32px 15px;
+}
+
+.btn__mail {
+  width: 150px;
+}
+
+.btn__dribble {
+  width: 200px;
 }
 
 .hero__iphone {
@@ -151,7 +169,7 @@
 
 .sayhello__section {
   height: var(--section-height);
-  background-color: var(--sayhello-background);
+  background-color: var(--grey-background);
   z-index: 1;
 }
 
@@ -163,7 +181,7 @@
 
 .lwys__section {
   height: 300px;
-  background-color: #16af90;
+  background-color: var(--green);
   z-index: 2;
   flex-direction: column;
 }
@@ -171,7 +189,7 @@
 .contact__section {
   height: var(--section-height);
   flex-direction: column;
-  background-color: #f4f4f4;
+  background-color: var(--grey-background);
   row-gap: 50px;
 }
 
@@ -246,19 +264,19 @@
 }
 
 .para__text--light {
-  color: #aaaaaa;
+  color: var(--light-grey);
 }
 
 .para__text--grey {
-  color: #909090;
+  color: var(--grey);
 }
 
 .para__text--darkgrey {
-  color: #5c5c5c;
+  color: var(--dark-grey);
 }
 
 .para__text--black {
-  color: #000000;
+  color: black;
 }
 
 .border__left--blue {
@@ -268,7 +286,7 @@
 
 .footer__text {
   font-size: 14px;
-  color: #868686;
+  color: var(--grey);
   font-weight: 600;
 }
 
@@ -307,13 +325,17 @@
 .email__linebreak {
   height: 16px;
   width: 2px;
-  background-color: #f4f4f4;
+  background-color: var(--grey-background);
 }
 
 .email__input {
   border: none;
   height: 100%;
   outline: none;
+}
+
+.email__input::placeholder {
+  color: var(--light-grey);
 }
 
 .email__icon {
@@ -323,4 +345,25 @@
 
 .contact__icon {
   cursor: pointer;
+}
+
+.arrow__icon {
+  position: absolute;
+  cursor: pointer;
+  width: 44px;
+  height: 50px;
+  color: var(--grey);
+  background-color: var(--grey-background);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  border-radius: 8px;
+  right: 60px;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.envelope__icon--blue {
+  color: var(--sky-blue-background);
 }
