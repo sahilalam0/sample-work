@@ -198,6 +198,7 @@
   justify-content: space-between;
   height: 300px;
   width: 400px;
+  z-index: 1;
 }
 
 .dribble__img {
@@ -317,4 +318,9 @@
 
 .email__icon {
   height: 16px;
+  cursor: pointer;
+}
+
+.contact__icon {
+  cursor: pointer;
 }
